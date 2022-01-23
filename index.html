@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="E:\Html\img\favicon-32x32.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #item {
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        #text-item {
+            text-align: center;
+            position: absolute;
+            top: 40%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: left;
+        }
+
+        .of:hover {
+            -ms-transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+        }
+
+
+
+        .container {
+            padding: 64px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both
+        }
+
+        .column-66 {
+            float: left;
+            width: 66.66666%;
+            padding: 20px;
+        }
+
+        .column-33 {
+            float: left;
+            width: 33.33333%;
+            padding: 20px;
+        }
+
+        .large-font {
+            font-size: 48px;
+        }
+
+        .xlarge-font {
+            font-size: 64px
+        }
+
+        .button {
+            border: none;
+            color: white;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: dodgerblue;
+        }
+
+        img {
+            display: block;
+            height: auto;
+            max-width: 100%;
+        }
+
+        @media screen and (max-width: 1000px) {
+
+            .column-66,
+            .column-33 {
+                width: 100%;
+                text-align: center;
+            }
+
+            img {
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+
+<body style="overflow-x: hidden;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <h6 style="margin-left: 800px;">
+            <marquee>Speak to our Licensed Manager +91 8955742177 | Mon-Fri, 7am-6pm </marquee>
+        </h6>
+        <h6 style="margin-left:120px;">&copy; Copyrights</h6>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="E:\Html\img\apple-touch-icon.png" alt="" width="40" height="50" style="margin-left: 20px;">
+            <a class="navbar-brand" href="1st.html" style="margin-left: 20px; font-size: 25px;"><b>DashBoard</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item" style="margin-left: 700px; font-size: 15px;">
+                        <a class="nav-link active" aria-current="page" href="index.html"
+                            style="margin-left: 20px;"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ourfeature"
+                            style="margin-left: 20px; font-size: 15px;"><b>Features</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#abuotus" style="margin-left: 20px; font-size: 15px;"><b>About-us</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactus" style="margin-left: 20px; font-size: 15px;"><b>Contact</b></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 20px;"><b>
+                                Details</b>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#"><b>Dashboard</b></a></li>
+                            <li><a class="dropdown-item" href="#"><b>Profile</b></a></li>
+                            <li><a class="dropdown-item" href="#"><b>Logout</b></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <container>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" id="item">
+                    <img src="E:\Html\img\1271967.jpg" class="d-block w-100" alt="Web Developement">
+                    <div class="carousel-caption d-none d-md-block" id="text-item">
+                        <h5 style="font-size: 50px;">Web Developement</h5>
+                        <p>We Provide Best services.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" id="item">
+                    <img src="E:\Html\img\image1-7.jpg" class="d-block w-100" alt="Cloud Computing">
+                    <div class="carousel-caption d-none d-md-block" id="text-item">
+                        <h5 style="font-size: 50px;">Cloud Computing</h5>
+                        <p>We Manage Your Data On Server.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" id="item">
+                    <img src="E:\Html\img\photo-1586717799252-bd134ad00e26.jpg" class="d-block w-100"
+                        alt="Graphics Design">
+                    <div class="carousel-caption d-none d-md-block" id="text-item">
+                        <h5 style="font-size: 50px;">Graphics Design</h5>
+                        <p>We are Make Best Post For Your Business.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </container>
+    <container>
+        <div>
+
+            <h1 class="of" style="margin-top: 70px; margin-bottom: 50px; text-align: center;" id="ourfeature">--Our
+                Features--</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="column-66">
+                        <h1 class="xlarge-font"><b>Website Desining</b></h1>
+                        <h1 class="large-font" style="color:dodgerblue;"><b>Why make it?</b></h1>
+                        <p><span style="font-size:36px">Make Website with Professionals.</span> You should buy this app
+                            because
+                            lorem ipsum
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim
+                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.</p>
+                        <button class="button">Read More</button>
+                    </div>
+                    <div class="column-33">
+                        <img src="E:\Html\img\Premium Photo _ Programmer working on laptop computer in office studio.jpg"
+                            width="335" height="471">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Clarity Section -->
+            <div class="container" style="background-color:#f1f1f1">
+                <div class="row">
+                    <div class="column-33">
+                        <img src="E:\Html\img\download (10).jpg" alt="App" width="335" height="471">
+                    </div>
+                    <div class="column-66">
+                        <h1 class="xlarge-font"><b>Cloud Services</b></h1>
+                        <h1 class="large-font" style="color:red;"><b>Makes Data Safe</b></h1>
+                        <p><span style="font-size:24px">A revolution in resolution.</span> Sharp and clear photos with
+                            the world's
+                            best photo engine, incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud
+                            exercitation ullamco laboris nisi ut aliquipex ea commodo consequat. Duis aute irure dolor
+                            in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <button class="button" style="background-color:red">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The App Section -->
+            <div class="container">
+                <div class="row">
+                    <div class="column-66">
+                        <h1 class="xlarge-font"><b>Graphics Designing</b></h1>
+                        <h1 class="large-font" style="color:dodgerblue;"><b>You Think We Create</b></h1>
+                        <p><span style="font-size:36px">Make post like a pro.</span> You should buy this app because
+                            lorem ipsum
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim
+                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis
+                            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur.</p>
+                        <button class="button">Read More</button>
+                    </div>
+                    <div class="column-33">
+                        <img src="E:\Html\img\Katterineart _ Graphic Design (@katterineart) TikTok _ Watch Katterineart _ Graphic Design's Newest TikTok Videos.png"
+                            width="335" height="471">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </container>
+
+    <div class="container" style="background-color:#f1f1f1">
+        <h1 style=" margin-bottom: 100px; text-align: center;" class="of" id="aboutus">--Our Team--</h1>
+        <div class="row" style="margin-left: 70px;">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="E:\Html\img\images (4).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4>Joen Doe</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <button type="button" class="btn btn-outline-primary">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="E:\Html\img\images.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4>Steve Peterson</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <button type="button" class="btn btn-outline-primary">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="E:\Html\img\images (2).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4>Devid Smith </h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <button type="button" class="btn btn-outline-primary">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 style="margin-top: 80px; margin-bottom:50px; text-align: center;" class="of">--Contact us--</h1>
+    <div class="card mb-3" style="max-width: 100%; max-height: 150px; margin-left: 100px; margin-right: 100px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="E:\Html\img\Retro vintage technology, computers, phones, radios, cassette & record players.jpg"
+                    class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Message</h5>
+                    <form class="row g-4">
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">State</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="inputZip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Check me out
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-light bg-primary" style="margin-top: 50px;">
+                <div class="row">
+                    <div class="col-md-3" >
+                        <a class="navbar-brand" href="#">
+                            <img src="E:\Html\img\apple-touch-icon.png" alt="" width="100" height="124" style="margin-left: 20px;">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <p style="margin-top: 15px;">dashboard@gmail.com</p>
+                    </div>
+                </div>
+                <p>About us</p>
+                <p>About us</p>
+                <p>About us</p>
+                <p>About us</p>
+                
+            </div>
+        </nav>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
